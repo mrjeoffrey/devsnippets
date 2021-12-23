@@ -1,0 +1,57 @@
+/* STRUCTURAL STYLES */
+
+* {
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #343434;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction:center;
+    flex-wrap:wrap;
+    gap: 1rem;
+}
+
+.card {
+    flex: 1 0 33%;
+}
+
+/* DESIGN */
+
+h1 {
+    font-size: 42pt;
+    color: purple;
+}
+header p {
+    color:white;
+    font-size: 16pt;
+    line-height: 18pt;
+}
+
+/* CARD STYLES */
+
+.card {
+    border: 1px dashed white;
+    color: purple;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18pt;
+    color: white;
+    background-color: purple;
+    border-radius: .25em;
+
+}
+
+footer p {
+    font-size: 48pt;
+    color: purple;
+    font-weight: bolder;
+}
