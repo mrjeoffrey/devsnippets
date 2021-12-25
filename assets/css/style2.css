@@ -1,5 +1,119 @@
-/* STRUCTURAL STYLES */
+:root {
+    --linear-gradient: linear-gradient(
+        rgba(247, 248, 249, 0.3) 0%,
+        rgba(222, 229, 244, 0.6) 100%);
+}
 
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    /* gap:1rem; */
+}
+
+.snippet-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap:1.5rem;
+    margin: 1rem;
+    grid-row: auto;
+}
+
+
+.span-1 {
+    grid-column: span 1;
+}
+.span-2 {
+    grid-column: span 2;
+}
+.span-3 {
+    grid-column: span 3;
+}
+.span-4 {
+    grid-column: span 4;
+}
+.span-5 {
+    grid-column: span 5;
+}
+.span-6 {
+    grid-column: span 6;
+}
+
+aside {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    position: sticky;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.053);
+}
+
+main {
+    grid-column: 2 / -1;
+}
+
+.start {
+    grid-column: 2 / 6;
+    justify-self: center;
+}
+
+header {
+    padding: 3rem 0;
+    background-color: rgb(245, 251, 255);
+    background-image: var(--linear-gradient);
+}
+
+pre {
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.navlist {
+list-style-type: none;
+text-align: right;
+margin-right:10%;
+line-height: 25pt;
+}
+
+.card {
+    border:1px solid rgb(230, 230, 230);
+    padding: 1.5em;
+    border-radius: .5rem;
+    box-shadow: 0 10px 10px rgb(245, 245, 245);
+    grid-column: span 2;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 20pt;
+}
+
+
+
+.code-block {
+    width:auto;
+    background-image: var(--linear-gradient);
+}
+
+
+footer {
+    background-color: #3d3d3d;
+    color: white;
+    font-size: 10pt;
+    padding-left: 1rem;
+}
+
+
+
+/* 
 * {
     color: white;
     box-sizing: border-box;
@@ -20,11 +134,11 @@ main {
 
 .card {
     flex: 1 0 33%;
-}
+} */
 
 /* DESIGN */
 
-h1 {
+/* h1 {
     font-size: 42pt;
     color: purple;
 }
@@ -32,10 +146,10 @@ header p {
     color:white;
     font-size: 16pt;
     line-height: 18pt;
-}
+} */
 
 /* CARD STYLES */
-
+/* 
 .card {
     border: 1px dashed white;
     color: purple;
@@ -54,4 +168,4 @@ footer p {
     font-size: 48pt;
     color: purple;
     font-weight: bolder;
-}
+} */
